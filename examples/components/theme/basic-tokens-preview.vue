@@ -174,7 +174,7 @@ import {
 } from './constant.js';
 
 const original = {
-  'color_primary': '#409EFF',
+  'color_primary': '#2b2c2e',
   'color_success': '#67C23A',
   'color_warning': '#E6A23C',
   'color_danger': '#F56C6C',

@@ -29,7 +29,7 @@
     .nav-item {
       a {
         font-size: 16px;
-        color: #333;
+        color: #c8c8c8;
         line-height: 40px;
         height: 40px;
         margin: 0;
@@ -41,7 +41,7 @@
         font-weight: bold;
 
         &.active {
-          color: #409EFF;
+          color: #fff;
         }
       }
 
@@ -49,7 +49,7 @@
         a {
           display: block;
           height: 40px;
-          color: #444;
+          color: #c8c8c8;
           line-height: 40px;
           font-size: 14px;
           overflow: hidden;
@@ -59,7 +59,7 @@
 
           &:hover,
           &.active {
-            color: #409EFF;
+            color: #fff;
           }
         }
       }
@@ -70,7 +70,7 @@
         }
         
         & > a {
-          color: #777;
+          color: #c8c8c8;
           font-weight: 300;
           font-size: 14px;
         }
@@ -98,7 +98,7 @@
 
     .nav-group__title {
       font-size: 12px;
-      color: #999;
+      color: #c8c8c8;
       line-height: 26px;
       margin-top: 15px;
     }

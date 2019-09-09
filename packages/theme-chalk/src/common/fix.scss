@@ -1,0 +1,116 @@
+/* element 组件问题修复 */
+@import "./dark-theme.scss";
+
+.base-nav, .base-bg {
+  background: $--base-theme-color;
+}
+
+.base-content {
+  background: $--base-content-color;
+}
+
+.base-border {
+  border-color: $--base-content-color;
+}
+
+.active-nav {
+  background: $--lighter-content-color;
+}
+
+.info-content {
+  background: $--heavier-content-color;
+}
+
+.base-font {
+  color: $--title-font-color;
+}
+
+.second-font {
+  color: $--content-font-color;
+}
+
+.light-font {
+  color: $--tips-font-color;
+}
+
+.placeholder-font {
+  color: $--content-font-color;
+}
+
+.light-icon {
+  color: $--lighter-icon-color;
+}
+
+/* fix code 这部分代码是为了贴合视觉稿而存在 */ 
+
+/*select*/
+.el-select .el-input {
+  font-size: 14px;
+}
+
+.el-select-dropdown.el-popper {
+  margin: 0;
+  padding: 0;
+}
+
+/*tab*/
+.el-tabs__item:hover {
+  color: $--active-font-color;
+}
+
+.el-tabs__item.is-active {
+  color: $--active-font-color;
+}
+
+.el-tabs__active-bar {
+  background: $--active-bar-color;
+}
+
+/* dialog*/
+.el-dialog {
+  border: 1px solid $--dialog-border-color;
+}
+
+/* table */
+.el-table tr , .el-table th{
+  background: $--base-theme-color;
+}
+
+.el-table__empty-block {
+  background: $--base-theme-color;
+}
+
+/*button*/
+.el-button {
+  &:hover,
+  &:focus {
+    color: $--title-font-color;
+    &.el-button--default {
+      background: $--lighter-content-color;
+      border-color: $--lighter-border-color;
+    }
+    &.el-button--primary {
+      background: #5c92ff;
+      border-color: #5c92ff;
+    }
+  }
+}
+
+.el-button--text {
+  color: $--content-font-color;
+}
+
+/* card */
+.el-card {
+  background-color: $--base-theme-color;
+} 
+
+/* radio */
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: $--active-bar-color;
+  background-color: $--active-bar-color;
+}
+
+.el-radio__input.is-checked + .el-radio__label {  
+  color: $--title-font-color;
+}

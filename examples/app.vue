@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class="{ 'is-component': isComponent }">
+  <div id="app" style="background: #2b2c2e;" :class="{ 'is-component': isComponent }">
     <main-header v-if="lang !== 'play'"></main-header>
     <div class="main-cnt">
       <router-view></router-view>

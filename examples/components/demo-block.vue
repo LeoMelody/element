@@ -157,7 +157,7 @@
       }
 
       &:hover {
-        color: #409EFF;
+        color: #2b2c2e;
         background-color: #f9fafc;
       }
 

@@ -61,7 +61,7 @@ Vous pouvez utiliser l'attribut `color` pour définir la couleur de la barre de 
     data() {
       return {
         percentage: 20,
-        customColor: '#409eff',
+        customColor: '#2b2c2e',
         customColors: [
           {color: '#f56c6c', percentage: 20},
           {color: '#e6a23c', percentage: 40},

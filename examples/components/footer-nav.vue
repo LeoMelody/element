@@ -41,10 +41,10 @@
     transition: .3s;
     
     &:hover {
-      color: #409EFF;
+      color: #2b2c2e;
      
       & i {
-        color: #409EFF;
+        color: #2b2c2e;
       }
     }
   }
