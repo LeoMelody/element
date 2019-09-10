@@ -1,42 +1,27 @@
 /*全局样式*/
 @import "./dark-theme.scss";
 
-$--background-color-base: #1A1A1A;
-$--border-color-base: #1A1A1A;
-$--border-color-extra-light: #393A3D;
+$--background-color-base: $--base-content-color;
+$--border-color-base: $--base-border-color;
+$--border-color-extra-light: $--lighter-border-color;
 $--border-color-light: $--base-border-color;
 $--border-color-lighter: $--lighter-border-color;
-$--border-radius-base: 4px;
-$--color-black: #2b2c2e;
-$--color-danger: #CC4053;
-$--color-primary: #2B2C2E;
-$--color-success: #31A86E;
-$--color-text-placeholder: #C8C8C8;
-$--color-text-primary: #C8C8C8;
-$--color-text-regular: #fff;
-$--color-text-secondary: #999999;
-$--color-warning: #D9A33A;
-$--color-white: #fff;
+$--border-radius-base: 3px;
 $--alert-border-radius: $--border-radius-base;
-$--avatar-background-color: #2B2C2E;
+$--avatar-background-color: $--base-theme-color;
 $--avatar-border-radius: $--border-radius-base;
 $--backtop-background-color: $--color-primary;
-$--backtop-font-color: #FFFFFF;
-$--backtop-hover-background-color: #393A3D;
+$--backtop-font-color: $--title-font-color;
+$--backtop-hover-background-color: $--lighter-content-color;
 $--badge-background-color: $--color-primary;
-$--button-danger-font-color: #FFFFFF;
-$--button-default-background-color: #4C4E52;
-$--button-default-border-color: #4C4E52;
-$--button-default-font-color: #FFFFFF;
-$--button-disabled-background-color: #EBEEF5;
+$--button-default-background-color: $--button-default;
+$--button-default-border-color: $--button-default;
+$--button-default-font-color: $--color-white;
+$--button-disabled-background-color: $--button-disable;
 $--button-disabled-font-color: #999999;
 $--button-font-size: 14px;
-$--button-info-font-color: #FFFFFF;
-$--button-primary-background-color: #3377FF;
-$--button-primary-border-color: #3377FF;
-$--button-primary-font-color: #FFFFFF;
-$--button-success-font-color: #FFFFFF;
-$--button-warning-font-color: #FFFFFF;
+$--button-primary-background-color: $--button-primary;
+$--button-primary-border-color: $--button-primary;
 $--cascader-menu-font-color: #999999;
 $--cascader-menu-selected-font-color: #FFFFFF;
 $--collapse-border-color: #1A1A1A;
@@ -51,12 +36,8 @@ $--datepicker-inrange-background-color: #FFFFFF;
 $--datepicker-inrange-hover-background-color: $--color-primary;
 $--datepicker-off-font-color: #FFFFFF;
 $--input-background-color: #1A1A1A;
-$--link-danger-font-color: #FFFFFF;
-$--link-default-active-color: #FFFFFF;
-$--link-info-font-color: #FFFFFF;
-$--link-primary-font-color: #FFFFFF;
-$--link-success-font-color: #FFFFFF;
-$--link-warning-font-color: #FFFFFF;
+$--link-primary-font-color: $--button-primary;
+$--link-default-active-color: $--color-text-primary;
 $--menu-background-color: $--color-primary;
 $--menu-item-font-size: 16px;
 $--messagebox-content-color: #C8C8C8;
@@ -82,6 +63,10 @@ $--tag-primary-color: #FFFFFF;
 $--tooltip-color: $--color-primary;
 $--tooltip-fill: #FFFFFF;
 $--font-weight-primary: 400;
+$--button-hover-tint-percent: 26.5%;
+
+/* 与主题无关样式 是一些布局的样式，比如margin、padding这些的 */ 
+
 /*select*/
 $--select-dropdown-background: $--color-primary;
 $--select-option-hover-background: $--base-content-color;
@@ -89,3 +74,14 @@ $--select-option-hover-background: $--base-content-color;
 $--dialog-background-color: $--color-primary; 
 $--dialog-box-shadow: 0 2px 20px 0 $--dialog-box-shadow;
 /*button*/
+$--button-border-radius: 0px;
+$--color-primary-light-7: transparent;
+/* radio */
+$--radio-disabled-input-fill: $--color-text-placeholder; 
+$--radio-disabled-checked-input-fill: $--slate-grey;
+$--radio-button-checked-background-color: $--button-primary;
+/*check-box*/
+$--checkbox-button-checked-background-color: $--button-primary;
+$--checkbox-checked-font-color: $--color-text-primary; 
+$--checkbox-checked-background-color: $--base-content-color;
+$--checkbox-checked-input-border-color: $--base-content-color;

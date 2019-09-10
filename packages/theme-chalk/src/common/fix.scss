@@ -41,8 +41,54 @@
   color: $--lighter-icon-color;
 }
 
-/* fix code 这部分代码是为了贴合视觉稿而存在 */ 
+.common-active-border {
+  border: $--active-border;
+}
+/* fix code 这部分代码是为了贴合视觉稿以及当前主题明显和之前的不相符而存在的 */ 
 
+/*button 主要是文字按钮有一些问题*/
+.el-button--text {
+  color: $--content-font-color;
+  &:hover,
+  &:focus {
+    color: $--title-font-color;
+  }
+}
+
+/* radio TODO 是否要修复成视觉稿那种效果，还是在hive中单独处理 */ 
+.el-radio-button:not(.is-disabled){
+  .el-radio-button__inner:hover {
+    color: $--color-text-primary;
+  }
+  /*
+  &:not(.is-active) {
+    .el-radio-button__inner {
+      background: $--base-theme-color;
+    }
+  }
+  */
+}
+
+.el-radio-button.is-disabled {
+  .el-radio-button__inner {
+    border: none;
+  }
+}
+
+/*checkbox*/ 
+.el-checkbox-button:not(.is-disabled) {
+  .el-checkbox-button__inner:hover {
+    color: $--color-text-primary;
+  }
+}
+
+.el-checkbox-button:not(.is-disabled) {
+  .el-checkbox-button__inner {
+    border: none;
+  }
+}
+
+/* input */
 /*select*/
 .el-select .el-input {
   font-size: 14px;
@@ -51,6 +97,10 @@
 .el-select-dropdown.el-popper {
   margin: 0;
   padding: 0;
+}
+
+.el-select .el-input.el-input--suffix {
+  color: $--color-text-primary;
 }
 
 /*tab*/
@@ -78,26 +128,6 @@
 
 .el-table__empty-block {
   background: $--base-theme-color;
-}
-
-/*button*/
-.el-button {
-  &:hover,
-  &:focus {
-    color: $--title-font-color;
-    &.el-button--default {
-      background: $--lighter-content-color;
-      border-color: $--lighter-border-color;
-    }
-    &.el-button--primary {
-      background: #5c92ff;
-      border-color: #5c92ff;
-    }
-  }
-}
-
-.el-button--text {
-  color: $--content-font-color;
 }
 
 /* card */
