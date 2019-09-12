@@ -14,7 +14,7 @@
       h4 {
         margin: 20px 0 16px;
         font-size: 16px;
-        color: #1f2f3d;
+        color: #fff;
         line-height: 1;
       }
       
@@ -77,7 +77,7 @@
     h3 {
       margin: 0 0 10px;
       font-size: 18px;
-      color: #1f2f3d;
+      color: #fff;
       font-weight: normal;
       height: 22px;
     }

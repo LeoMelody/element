@@ -89,7 +89,7 @@ button, input, select, textarea {
 
   h2 {
     font-size: 28px;
-    color: #1f2d3d;
+    color: #fff;
     margin: 0;
   }
   h3 {
@@ -97,7 +97,7 @@ button, input, select, textarea {
   }
   h2, h3, h4, h5 {
     font-weight: normal;
-    color: #1f2f3d;
+    color: #fff;
 
     &:hover a {
       opacity: .4;
@@ -117,7 +117,7 @@ button, input, select, textarea {
 
   p {
     font-size: 14px;
-    color: #5e6d82;
+    color: #c8c8c8;
     line-height: 1.5em;
   }
 

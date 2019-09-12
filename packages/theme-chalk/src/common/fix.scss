@@ -144,3 +144,27 @@
 .el-radio__input.is-checked + .el-radio__label {  
   color: $--title-font-color;
 }
+
+/*menu*/
+.el-menu--horizontal > .el-menu-item:not(.is-disabled):hover, .el-menu--horizontal > .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal > .el-submenu .el-submenu__title:hover{
+  background: $--menu-item-hover-fill;
+}
+
+.el-menu-item.is-active {
+  color: $--active-font-color;
+}
+
+.el-menu--horizontal > .el-menu-item {
+  color: $--color-text-regular;
+}
+
+.el-menu--horizontal .el-menu .el-menu-item, .el-menu--horizontal .el-menu .el-submenu__title {
+  background: $--base-theme-color;
+  color: $--color-text-regular;
+}
+
+/*autocomplete-suggestion*/
+.el-autocomplete-suggestion{
+  border:none;
+  background: $--base-theme-color;  
+}

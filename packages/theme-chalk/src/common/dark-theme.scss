@@ -2,10 +2,10 @@
 $--base-theme-color: #2B2C2E;
 $--color-text-primary: #fff;
 $--color-text-regular: #c8c8c8;
-$--color-text-sencondary: #999;
+$--color-text-secondary: #999;
 $--title-font-color: $--color-text-primary;
 $--content-font-color: $--color-text-regular;
-$--tips-font-color: $--color-text-sencondary;
+$--tips-font-color: $--color-text-secondary;
 $--base-content-color: #1A1A1A;
 $--heavier-content-color: #000;
 $--lighter-content-color: #393A3D;
@@ -27,9 +27,10 @@ $--dialog-border-color: #121212;
 $--dialog-box-shadow: rgba(0,0,0,0.5);
 $--input-border-color: $--lighter-border-color;
 $--input-border-color-hover: $--color-primary;
-$--color-text-placeholder: $--color-text-sencondary;
-$--color-white: $--color-text-primary;
+$--color-text-placeholder: $--color-text-secondary;
+$--color-white: #fff;
 $--active-border: 2px solid #3377FF;
+$--menu-item-hover-fill: #393A3D;
 
 /* 额外补充颜色 */ 
 $--dark-grey: #202021;

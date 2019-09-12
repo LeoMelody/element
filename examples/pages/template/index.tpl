@@ -112,7 +112,7 @@
     h3 {
       margin: 0;
       font-size: 18px;
-      color: #1f2f3d;
+      color: #fff;
       font-weight: normal;
     }
     p {
