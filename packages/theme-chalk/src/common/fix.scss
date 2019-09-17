@@ -3,14 +3,20 @@
 
 .base-nav, .base-bg {
   background: $--base-theme-color;
+  color: $--content-font-color;
 }
 
 .base-content {
   background: $--base-content-color;
+  color: $--content-font-color;
 }
 
 .base-border {
   border-color: $--base-content-color;
+}
+
+.content-border {
+  border-color: $--content-border-color;
 }
 
 .active-nav {
@@ -21,7 +27,7 @@
   background: $--heavier-content-color;
 }
 
-.base-font {
+.title-font,.base-font {
   color: $--title-font-color;
 }
 
@@ -41,10 +47,7 @@
   color: $--lighter-icon-color;
 }
 
-.common-active-border {
-  border: $--active-border;
-}
-/* fix code 这部分代码是为了贴合视觉稿以及当前主题明显和之前的不相符而存在的 */ 
+/* fix code 这部分代码是为了贴合视觉稿而存在 */ 
 
 /*button 主要是文字按钮有一些问题*/
 .el-button--text {
@@ -167,4 +170,33 @@
 .el-autocomplete-suggestion{
   border:none;
   background: $--base-theme-color;  
+}
+
+/*tabs*/
+.el-tabs__item {
+  color: $--color-text-secondary;
+}
+
+.el-tabs--card {
+  .el-tabs__item.is-active {
+    background: $--lighter-content-color;
+  }
+}
+
+.el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+  border-bottom-color: $--active-bar-color;
+} 
+
+.el-tabs--border-card {
+  background: $--base-theme-color;
+  > .el-tabs__header .el-tabs__item {
+    &:not(.is-disabled):hover {
+      color: $--color-text-primary;
+    }
+
+    &.is-active {
+      background-color: $--lighter-content-color;
+      color: $--color-text-primary;
+    }
+  }
 }

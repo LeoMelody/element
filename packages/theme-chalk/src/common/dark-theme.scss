@@ -1,3 +1,7 @@
+/* 额外补充颜色 */ 
+$--dark-grey: #202021;
+$--dark-grey-two: #2e2f30;
+$--slate-grey: #616366;
 /* 深色主题风格 */
 $--base-theme-color: #2B2C2E;
 $--color-text-primary: #fff;
@@ -19,6 +23,7 @@ $--button-default: #4C4E52;
 $--button-disable: #393A3D;
 $--lighter-icon-color: #76777A;
 $--base-border-color: #1A1A1A;
+$--content-border-color: $--dark-grey-two;
 $--lighter-border-color: #393A3D;
 $--active-bar-color: #3377FF;
 $--font-hover-color: $--title-font-color;
@@ -31,8 +36,3 @@ $--color-text-placeholder: $--color-text-secondary;
 $--color-white: #fff;
 $--active-border: 2px solid #3377FF;
 $--menu-item-hover-fill: #393A3D;
-
-/* 额外补充颜色 */ 
-$--dark-grey: #202021;
-$--dark-grey-two: #2e2f30;
-$--slate-grey: #616366;
