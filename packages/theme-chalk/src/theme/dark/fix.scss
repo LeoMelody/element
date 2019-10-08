@@ -53,10 +53,10 @@
 
 /*button 主要是文字按钮有一些问题*/
 .el-button--text {
-  color: $--content-font-color;
+  color: $--button-primary;
   &:hover,
   &:focus {
-    color: $--title-font-color;
+    color: mix($--color-white, $--button-primary, $--button-active-shade-percent);
   }
 }
 
@@ -65,13 +65,6 @@
   .el-radio-button__inner:hover {
     color: $--color-text-primary;
   }
-  /*
-  &:not(.is-active) {
-    .el-radio-button__inner {
-      background: $--base-theme-color;
-    }
-  }
-  */
 }
 
 .el-radio-button.is-disabled {
@@ -91,6 +84,10 @@
   .el-checkbox-button__inner {
     border: none;
   }
+}
+
+.el-checkbox__inner::after {
+  border-color: #fff;
 }
 
 /* input */
@@ -135,6 +132,19 @@
 
 .el-table__empty-block {
   background: $--base-theme-color;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped {
+  td {
+    background: $--lighter-content-color;
+  }
+  &:hover td {
+    background: $--base-content-color;
+  }
+} 
+
+.el-table .warning-row {
+  
 }
 
 /* card */

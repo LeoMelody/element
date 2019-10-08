@@ -89,9 +89,9 @@ $--radio-disabled-checked-input-fill: $--slate-grey;
 $--radio-button-checked-background-color: $--button-primary;
 /*check-box*/
 $--checkbox-button-checked-background-color: $--button-primary;
-$--checkbox-checked-font-color: $--color-text-primary; 
-$--checkbox-checked-background-color: $--base-content-color;
-$--checkbox-checked-input-border-color: $--base-content-color;
+$--checkbox-checked-font-color: #FFF; 
+$--checkbox-checked-background-color: $--button-primary;
+$--checkbox-checked-input-border-color: $--button-primary;
 /*menu*/
 $--menu-item-font-color: $--color-text-regular;
 /*picker*/
