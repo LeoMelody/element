@@ -18,11 +18,12 @@ function fileExists(filePath) {
 
 themes.forEach((theme) => {
   var isSCSS = theme !== 'theme-default';
+  var indexContent = ""
   // 如果有当前的主题，则导入主题样式
   if (currentTheme) { 
-
+    indexContent += isSCSS ? `@import "./theme/${currentTheme}/index.scss";\n` : `@import "./theme/${currentTheme}/index.css";\n`
   }
-  var indexContent = isSCSS ? '@import "./base.scss";\n' : '@import "./base.css";\n';
+  indexContent += isSCSS ? '@import "./base.scss";\n' : '@import "./base.css";\n';
   Components.forEach(function(key) {
     if (['icon', 'option', 'option-group'].indexOf(key) > -1) return;
     var fileName = key + (isSCSS ? '.scss' : '.css');
@@ -33,5 +34,8 @@ themes.forEach((theme) => {
       console.log(theme, ' 创建遗漏的 ', fileName, ' 文件');
     }
   });
+  if (currentTheme) { 
+    indexContent += isSCSS ? `@import "./theme/${currentTheme}/fix.scss";\n` : `@import "./theme/${currentTheme}/fix.css";\n`
+  }
   fs.writeFileSync(path.resolve(basepath, theme, 'src', isSCSS ? 'index.scss' : 'index.css'), indexContent);
 });
