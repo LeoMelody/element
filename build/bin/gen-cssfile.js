@@ -1,6 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var Components = require('../../components.json');
+const currentTheme = process.env.theme || ""
 var themes = [
   'theme-chalk'
 ];
@@ -17,6 +18,10 @@ function fileExists(filePath) {
 
 themes.forEach((theme) => {
   var isSCSS = theme !== 'theme-default';
+  // 如果有当前的主题，则导入主题样式
+  if (currentTheme) { 
+
+  }
   var indexContent = isSCSS ? '@import "./base.scss";\n' : '@import "./base.css";\n';
   Components.forEach(function(key) {
     if (['icon', 'option', 'option-group'].indexOf(key) > -1) return;

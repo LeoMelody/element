@@ -1,7 +1,8 @@
 /* element 组件问题修复 */
 @import "./dark-theme.scss";
 
-.base-nav, .base-bg {
+.base-nav,
+.base-bg {
   background: $--base-theme-color;
   color: $--content-font-color;
 }
@@ -23,11 +24,12 @@
   background: $--lighter-content-color;
 }
 
-.info-content {
+.info-content,.black-bg {
   background: $--heavier-content-color;
 }
 
-.title-font,.base-font {
+.title-font,
+.base-font {
   color: $--title-font-color;
 }
 
@@ -47,7 +49,7 @@
   color: $--lighter-icon-color;
 }
 
-/* fix code 这部分代码是为了贴合视觉稿而存在 */ 
+/* fix code 这部分代码是为了贴合视觉稿而存在 */
 
 /*button 主要是文字按钮有一些问题*/
 .el-button--text {
@@ -58,8 +60,8 @@
   }
 }
 
-/* radio TODO 是否要修复成视觉稿那种效果，还是在hive中单独处理 */ 
-.el-radio-button:not(.is-disabled){
+/* radio TODO 是否要修复成视觉稿那种效果，还是在hive中单独处理 */
+.el-radio-button:not(.is-disabled) {
   .el-radio-button__inner:hover {
     color: $--color-text-primary;
   }
@@ -78,7 +80,7 @@
   }
 }
 
-/*checkbox*/ 
+/*checkbox*/
 .el-checkbox-button:not(.is-disabled) {
   .el-checkbox-button__inner:hover {
     color: $--color-text-primary;
@@ -107,7 +109,7 @@
 }
 
 /*tab*/
-.el-tabs__item:hover {
+.el-tabs__item:not(.is-disabled):hover {
   color: $--active-font-color;
 }
 
@@ -125,7 +127,9 @@
 }
 
 /* table */
-.el-table tr , .el-table th{
+.el-table,
+.el-table tr,
+.el-table th {
   background: $--base-theme-color;
 }
 
@@ -136,7 +140,7 @@
 /* card */
 .el-card {
   background-color: $--base-theme-color;
-} 
+}
 
 /* radio */
 .el-radio__input.is-checked .el-radio__inner {
@@ -144,12 +148,14 @@
   background-color: $--active-bar-color;
 }
 
-.el-radio__input.is-checked + .el-radio__label {  
+.el-radio__input.is-checked + .el-radio__label {
   color: $--title-font-color;
 }
 
 /*menu*/
-.el-menu--horizontal > .el-menu-item:not(.is-disabled):hover, .el-menu--horizontal > .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal > .el-submenu .el-submenu__title:hover{
+.el-menu--horizontal > .el-menu-item:not(.is-disabled):hover,
+.el-menu--horizontal > .el-menu-item:not(.is-disabled):focus,
+.el-menu--horizontal > .el-submenu .el-submenu__title:hover {
   background: $--menu-item-hover-fill;
 }
 
@@ -161,15 +167,16 @@
   color: $--color-text-regular;
 }
 
-.el-menu--horizontal .el-menu .el-menu-item, .el-menu--horizontal .el-menu .el-submenu__title {
+.el-menu--horizontal .el-menu .el-menu-item,
+.el-menu--horizontal .el-menu .el-submenu__title {
   background: $--base-theme-color;
   color: $--color-text-regular;
 }
 
 /*autocomplete-suggestion*/
-.el-autocomplete-suggestion{
-  border:none;
-  background: $--base-theme-color;  
+.el-autocomplete-suggestion {
+  border: none;
+  background: $--base-theme-color;
 }
 
 /*tabs*/
@@ -185,7 +192,7 @@
 
 .el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
   border-bottom-color: $--active-bar-color;
-} 
+}
 
 .el-tabs--border-card {
   background: $--base-theme-color;
@@ -199,4 +206,72 @@
       color: $--color-text-primary;
     }
   }
+}
+
+/*input_number*/
+.el-input-number.is-disabled {
+  .el-input-number__increase,
+  .el-input-number__decrease {
+    color: $--color-text-secondary;
+  }
+  &:hover {
+    .el-input-number__increase,
+    .el-input-number__decrease {
+      color: $--color-text-secondary;
+    }
+  }
+}
+
+.el-input-number__increase:hover,
+.el-input-number__decrease:hover {
+  color: $--color-text-primary;
+}
+
+/*select*/
+.el-select-dropdown__item.is-disabled:hover {
+  background: $--color-primary;
+}
+
+/*picker*/
+.el-picker-panel, .el-time-panel {
+  background: $--color-primary;
+}
+
+.time-select-item.selected:not(.disabled) {
+  color: $--color-text-primary;
+}
+
+.time-select-item.disabled {
+  color: $--lighter-icon-color;
+}
+
+.el-time-spinner__arrow:hover {
+  color: $--color-text-primary;
+}
+
+.el-range-editor .el-range-input {
+  background: $--color-primary;
+}
+
+/*date-picker*/
+.el-date-table,.el-month-table {
+  td.today span, td.today .cell {
+    color: $--color-text-primary;
+  } 
+  td.current:not(.disabled), 
+  td.selected,td.start-date,td.end-date{
+    span, .cell{
+     color: $--color-primary;
+    }
+  }
+}
+
+
+.el-picker-panel *[slot=sidebar], .el-picker-panel__sidebar {
+  background: $--color-primary;
+  border-color: $--base-border-color;
+}
+
+.el-picker-panel__footer {
+  background: $--color-primary;
 }

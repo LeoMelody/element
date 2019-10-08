@@ -32,7 +32,7 @@ $--collapse-header-background-color: $--color-primary;
 $--collapse-header-font-size: 16px;
 $--datepicker-active-color: #FFFFFF;
 $--datepicker-hover-font-color: #FFFFFF;
-$--datepicker-inrange-background-color: #FFFFFF;
+$--datepicker-inrange-background-color: $--slate-grey;
 $--datepicker-inrange-hover-background-color: $--color-primary;
 $--datepicker-off-font-color: #FFFFFF;
 $--input-background-color: #1A1A1A;
@@ -54,28 +54,35 @@ $--popup-modal-opacity: 0.5;
 $--radio-button-checked-font-color: #FFFFFF;
 $--select-input-focus-border-color: #2B2E2C;
 $--select-option-selected-font-color: #FFFFFF;
-$--switch-off-color: $--color-primary;
+$--switch-off-color: $--slate-grey;
 $--switch-on-color: $--color-success;
 $--table-border-color: #1A1A1A;
 $--table-header-font-color: #FFFFFF;
-$--tag-info-color: #FFFFFF;
-$--tag-primary-color: #FFFFFF;
+$--tag-info-color: $--color-info;
+$--tag-primary-color: $--color-primary;
 $--tooltip-color: $--color-primary;
 $--tooltip-fill: #FFFFFF;
 $--font-weight-primary: 400;
 $--button-hover-tint-percent: 26.5%;
 
 /* 与主题无关样式 是一些布局的样式，比如margin、padding这些的 */ 
-
+/*common*/
+$--fill-base: $--color-primary; 
 /*select*/
 $--select-dropdown-background: $--color-primary;
 $--select-option-hover-background: $--base-content-color;
+$--select-option-disabled-background: $--color-primary;
+$--select-group-color: $--color-text-secondary;
+$--select-multiple-input-color: $--color-text-secondary;
 /*dialog*/
 $--dialog-background-color: $--color-primary; 
 $--dialog-box-shadow: 0 2px 20px 0 $--dialog-box-shadow;
 /*button*/
 $--button-border-radius: 0px;
 $--color-primary-light-7: transparent;
+$--button-padding-vertical: 9px;
+$--button-padding-horizontal: 26px;
+$--button-font-size: 14px;
 /* radio */
 $--radio-disabled-input-fill: $--color-text-placeholder; 
 $--radio-disabled-checked-input-fill: $--slate-grey;
@@ -87,5 +94,5 @@ $--checkbox-checked-background-color: $--base-content-color;
 $--checkbox-checked-input-border-color: $--base-content-color;
 /*menu*/
 $--menu-item-font-color: $--color-text-regular;
+/*picker*/
 /*tabs*/
- 
